@@ -5,6 +5,7 @@ const ThemeSwitcher = () => {
   // No need to change *return* part
   // You have to set themeMode based on context
   const {themeMode, setThemeMode} = React.useContext( ThemeContext );
+
   
   const handleThemeChange = (e) => {
     setThemeMode( (themeMode === THEME_TYPE.LIGHT) ? THEME_TYPE.DARK : THEME_TYPE.LIGHT)
